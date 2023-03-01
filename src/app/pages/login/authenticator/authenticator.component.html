@@ -1,0 +1,20 @@
+
+<div class="container mt-3">
+  <div class="col-md-6 offset-md-3" ><main class="form-signin">
+    <form [formGroup]="form" (submit)="submit()">
+      <h1 class="h3 -mb-3 fw-normal"> Please insert your authenticator code  </h1>
+
+      <div class="mb-3" >
+        <label >enter your code </label>
+        <input formControlName="code"type="text" class="form-control"  placeholder="6 digits code ">
+
+      </div>
+
+
+      <button class="w-100 btn btn-lg btn-primary"type="submit">Sign in</button>
+    </form>
+    <img class="w-100" [src]="loginData.img" *ngIf="loginData.img"/>
+
+  </main>
+  </div>
+</div>
